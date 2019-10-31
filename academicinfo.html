@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        label {
+            color: #8e8c8c;
+            font-size: 12px;
+        }
+
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        li.details_blk {
+            font-size: 16px;
+            padding: 0px;
+        }
+
+        a {
+            color: black;
+        }
+
+        body {
+            background: #efefef
+        }
+
+        .roundedbutton {
+            border-radius: 16px;
+            border: 1px solid #FF9429;
+            background-color: #FF9429;
+        }
+        .roundedbutton1 {
+            border-radius: 16px;
+            color: white;
+            border: 1px solid #62CDBE;
+            background-color: #62CDBE;
+        }
+        .badge-light {
+            font-size: 20px;
+            border: 1px solid #32BB50;
+            border-radius: 50%;
+            padding: 6px;
+            width: 35px;
+            text-align: center;
+            height: 35px;
+        }
+
+        .list_anchor {
+            padding: 12px 20px;
+            display: block;
+            border-bottom: 1px solid #e3e3e3;
+            background: #f5efef;
+            transition-duration: 0.6s;
+        }
+
+        .list_anchor:hover {
+            text-decoration: none;
+            background: #ffffff;
+        }
+
+        .list_anchor:hover .badge-light {
+            background: green;
+            color: #fff;
+        }
+
+        input[type=text] {
+            background-color: #FAFAFA;
+
+
+
+        }
+
+        .form-control {
+
+            background-color: #FAFAFA;
+            border: 1px solid #ecebeb;
+        }
+
+        bt {
+            background-color: #62CDBE
+        }
+
+        .samplefooter {
+            height: 20px;
+            background-image: linear-gradient(to left, #B10403, #EE2509);
+        }
+
+        .attachment {
+            color: white;
+            background-color: #62CDBE;
+            padding: 2px;
+            border-radius: 6px;
+            vertical-align: center;
+        }
+
+        .navbar>.container {
+            margin-top: -15px;
+        }
+
+        input[type=radio] {
+            border: 0px;
+            width: 100%;
+            height: 2em;
+            color: #FF9429;
+        }
+        h4{
+            font-size: 16px;
+        }
+
+/*Radio box*/
+
+input[type="radio"] + .label-text:before{
+	content: "\f111";
+	font-family: "Font Awesome 5 Free";
+	speak: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+input[type="radio"]:checked + .label-text:before{
+	content: "\f192";
+	color: #8e44ad;
+	animation: effect 250ms ease-in;
+}
+
+input[type="radio"]:disabled + .label-text{
+	color: #aaa;
+}
+
+input[type="radio"]:disabled + .label-text:before{
+	content: "\f111";
+	color: #ccc;
+}
+
+/*Radio Toggle*/
+
+.toggle input[type="radio"] + .label-text:before{
+	content: "\f204";
+	font-family: "Font Awesome 5 Free";
+	speak: none;
+	font-style: normal;
+	font-weight: 900;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.toggle input[type="radio"]:checked + .label-text:before{
+	content: "\f205";
+	color: #16a085;
+	animation: effect 250ms ease-in;
+}
+
+.toggle input[type="radio"]:disabled + .label-text{
+	color: #aaa;
+}
+
+.toggle input[type="radio"]:disabled + .label-text:before{
+	content: "\f204";
+	color: #ccc;
+}
+
+
+@keyframes effect{
+	0%{transform: scale(0);}
+	25%{transform: scale(1.3);}
+	75%{transform: scale(1.4);}
+	100%{transform: scale(1);}
+}
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-light"
+            style=" background-image: linear-gradient(to left, #B10403 , #EE2509);">
+            <div class="container">
+                <div class="col-md-10">
+                    <div class="col-md-12"><img src="imtac.png"><span style="color: white;
+                    font-size: 30px;font-family:serif;"> &nbsp;AIMS UNIVERSITY</span></div>
+                    <h3 style="color: white" class="text-center">Application Form</h3>
+
+                </div>
+                <div class="col-md-2" style="color: white;">
+                    <img src="user.png" width="28px" height="25px">&nbsp;Seban J <span
+                        style="margin-top: 12px;display: inline-flex;"><i class="material-icons">expand_more</i></span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-sm-3">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item details_blk"><a href="personalinfo.html" class="list_anchor"><span
+                                class="badge badge-light">1</span>&nbsp; Personal Information </a></li>
+
+                    <li class="list-group-item details_blk"><a href="academicinfo.html" class="list_anchor"><span
+                                class="badge badge-light">2</span>&nbsp;Academinc Information</a></li>
+                    <li class="list-group-item details_blk"><a href="declaration.html" class="list_anchor"><span
+                                class="badge badge-light">3</span>&nbsp;Declaration</a></li>
+                    <li class="list-group-item details_blk"><a href="verify.html" class="list_anchor"><span
+                                class="badge badge-light">4</span>&nbsp;Verify & Submit</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Examinations passed</h5><br>
+                                <label>Exam Name </label>
+                                <select class="form-control">
+                                    <option>
+                                        Select Program
+                                    </option>
+                                    <option>
+                                        Select
+                                    </option>
+                                    <option>
+                                        Select
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label>University/Board/Dept.from which passed<span style="color:red;">*</span></label>
+                                <select class="form-control">
+                                    <option>
+                                        Select Program
+                                    </option>
+                                    <option>
+                                        Select
+                                    </option>
+                                    <option>
+                                        Select
+                                    </option>
+
+                                </select>
+
+
+                            </div>
+                            <div class="col-md-2 ">
+                                <label>Year of Passing <span style="color:red;">*</span></label>
+                                <select class="form-control">
+                                    <option>
+                                        2012
+                                    </option>
+                                    <option>
+                                        2013
+                                    </option>
+                                    <option>
+                                        2014
+                                    </option>
+
+                                </select>
+
+
+                            </div>
+                            <div class="col-md-2">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Roll Number<span style="color:red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Number">
+
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <label>Credit based system(CGPA/Marks system) <span style="color:red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Number">
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>CGPA/Scale/Max Marks<span style="color:red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Number">
+
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <label>Obtained CGPA/Obtained Marks <span style="color:red;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Number">
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            
+                                <div class="col-md-6">
+                                        <label>Percentage of marks Obtained<span style="color:red;">*</span></label>
+                                        <input type="text" class="form-control" placeholder="Enter Number">
+        
+        
+                                    </div>
+                            <div class="col-md-6">
+
+                                    <label>Division <span style="color:red;">*</span></label>
+                                    <select class="form-control">
+                                        <option>
+                                            Select 
+                                        </option>
+                                        <option>
+                                            Select
+                                        </option>
+                                        <option>
+                                            Select
+                                        </option>
+    
+                                    </select>
+    
+                                </div>
+
+
+                        </div>
+
+                        <div class="col-md-4">
+                        </div>
+                        <br>
+
+                        <div class="row">
+
+                            <button class="btn  btn-lg roundedbutton1 text-center background-color:#62CDBE">Add More Exam
+                            </button>
+                        </div>
+                        <hr>
+
+
+
+                        <h5>Required Documents</h5>
+
+                        <label> Attach the file from your computer in .jpg .png .pdf formats not exceeding 5 MB</label>
+                            <br/><br/>
+                        <div class="row">
+                                
+                            <div class="col-md-6">
+                                
+                                <h4>10Th Certificate<span style="color: red;">*</span></h4>
+
+                                <h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp; </h6>
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                <h4>12th Certificate<span style="color: red;">*</span></h4>
+
+                                <h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;</h6>
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <h4>Marksheet Of Qualifying Examination<span style="color: red;">*</span></h4>
+
+                                <h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;</h6>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4>latest Character Certificate <span style="color: red;">*</span></h4>
+
+                                <h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;</h6>
+
+                            </div>
+                        </div><br/>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <h4>Income Certificate if required<span style="color: red;">*</span></h4>
+
+                                <h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;</h6>
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                <h4>Certificate of gap year if any <span style="color: red;">*</span></h4>
+
+                                <h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;</h6>
+
+                            </div>
+
+                        </div>
+                        <hr>
+
+                        <h6>Under Which Category you are applying for ?</h6>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="radio-inline">
+                                    <input type="radio" name="optradio" class="form-check-input" checked>Open
+                                </h6>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="radio-inline">
+                                    <input type="radio" name="optradio" class="form-check-input">Reserved
+                                </h6>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+
+
+                            <div class="col-md-6">
+                                <label>Select Category</label><br>
+                                <select class="form-control">
+                                    <option>
+                                        Scheduled Caste
+                                    </option>
+                                    <option>
+                                        Select
+                                    </option>
+                                    <option>
+                                        Select
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Category certificate<span style="color:red;">*</span></label>
+                                <div style="color: #5a5a5a;line-height: 20px;">
+                                    <td><i class="material-icons attachment">&#xe226;</i></td><td>&nbsp;&nbsp;Attach the file from your computer .jpg .png .pdf formats not exceeding 5 MB </td>
+                                </div>
+                            </div>
+                        </div><br />
+                        <h6>Are you entitled for scholarship to be awarded by the Haryana
+                            Govt.</h6><br />
+                        <div class="row">
+
+                            <div class="col-md-2">
+                                <h6 class="radio-inline">
+                                    <input type="radio" name="yes" class="form-check-input" checked>Yes
+                                </h6>
+                            </div>
+                            <div class="col-md-2">
+                                <h6 class="radio-inline">
+                                    <input type="radio" name="yes" class="form-check-input">No
+                                </h6>
+                            </div>
+                        </div><br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>If Yes, Attach a support document <span style="color:red;">*</span></label>
+                                <div>
+                                    <p style="color: #5a5a5a;line-height: 20px;"><i
+                                            class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Attach the file
+                                        from your computer .jpg .png .pdf formats not exceeding 5 MB </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Are you entitled for stipend  to BC students under State Scheduled Caste  welfare scheme </h6><br/>
+                        <div class="row">
+
+                                <div class="col-md-2">
+                                    <h6 class="radio-inline">
+                                        <input type="radio" name="yes3" class="form-check-input" checked>Yes
+                                    </h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6 class="radio-inline">
+                                        <input type="radio" name="yes3" class="form-check-input">No
+                                    </h6>
+                                </div>
+                            </div><br />
+                            <div class="row">
+                                    <div class="col-md-6">
+                                        <label>If Yes, Attach a support document <span style="color:red;">*</span></label>
+                                        <div>
+                                            <p style="color: #5a5a5a;line-height: 20px;"><i
+                                                    class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Attach the file
+                                                from your computer .jpg .png .pdf formats not exceeding 5 MB </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6>Have you ever been expelled/rusticated/punished on accoount of misconduct or disipline by any of the  institutions  you have studied in?</h6><br/>
+                                <div class="row">
+
+                                        <div class="col-md-2">
+                                            <h6 class="radio-inline">
+                                                <input type="radio" name="yes1" class="form-check-input" checked>Yes
+                                            </h6>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h6 class="radio-inline">
+                                                <input type="radio" name="yes1" class="form-check-input">No
+                                            </h6>
+                                        </div>
+                                    </div><br /><br/>
+                                    <div class="row">
+                                            <div class="col-md-6 col-md-offset-3">
+                                                &nbsp;&nbsp;&nbsp;<button class="btn btn-primary  roundedbutton"><strong>Save & Continue</strong></button>
+                                            </div>
+                                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+                <p style="font-size: 12px">DELIVERY PARTNER</p>
+                <img src="imtac-logo.png" width="120px" height="30px">
+            </div>
+        </div>
+    </div><br />
+    <h1 class="samplefooter"></h1>
+</body>
+
+</html>

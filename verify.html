@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ex</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<style>
+        th{
+           color: #8e8c8c;font-style: normal;
+        }
+		.roundedbutton {
+			border-radius: 16px;
+			border: 1px solid #FF9429;
+			background-color: #FF9429;
+		}
+
+		input[type=checkbox],
+		input[type=radio] {
+			box-sizing: border-box;
+			padding: 0;
+			width: 20px;
+			height: 20px;
+		}
+
+		.container-fluid {
+			padding-right: 0;
+			padding-left: 0;
+			margin-right: auto;
+			margin-left: auto
+		}
+
+		li.details_blk {
+			font-size: 16px;
+			padding: 0px;
+		}
+
+		a {
+			color: black;
+		}
+
+		body {
+			//background: #f5efef;
+                    background: #efefef;
+		}
+
+		.badge-light {
+			font-size: 20px;
+			border: 1px solid green;
+			border-radius: 50%;
+			padding: 6px;
+			width: 35px;
+			text-align: center;
+			height: 35px;
+		}
+
+		.list_anchor {
+			padding: 12px 20px;
+			display: block;
+			border-bottom: 1px solid #e3e3e3;
+			background: #f5efef;
+			transition-duration: 0.6s;
+		}
+
+		.list_anchor:hover {
+			text-decoration: none;
+			background: #ffffff;
+		}
+
+		.list_anchor:hover .badge-light {
+			background: green;
+			color: #fff;
+		}
+        label{
+            font-size: 12px;
+                color: #8e8c8c;
+            //color: #efefef;
+        }
+        h6{
+             color: #8e8c8c;
+            font-size: 18px;
+        }
+        .attachment{
+                color: white;
+    background-color: #62CDBE;
+    padding: 2px;
+    border-radius: 6px;
+            vertical-align: center;
+        }
+        .navbar>.container{
+                margin-top: -15px;
+        }
+        .samplefooter {
+height:20px;
+  background-image: linear-gradient(to left, #B10403 , #EE2509);
+}
+	</style>
+</head>
+
+<body>
+<div class="container-fluid" >
+        
+         
+    <nav class="navbar navbar-expand-sm bg-light"  style=" background-image: linear-gradient(to left, #B10403 , #EE2509);" >
+        <div class="container">
+            <div class="col-md-10">
+                <div class="col-md-12"><img src="imtac.png"><span style="color: white;
+                    font-size: 30px;font-family:serif;"> &nbsp;AIMS UNIVERSITY</span></div>
+              <h3 style="color: white" class="text-center">Application Form</h3>
+
+                 </div>
+            <div class="col-md-2" style="pull-right;color: white;">
+               <img src="user.png" width="28px" height="25px">&nbsp;Seban J <span style="margin-top: 12px;display: inline-flex;"><i class="material-icons">expand_more</i></span>
+            </div>
+        </div>
+     </nav>
+           
+</div>
+
+	<div class="container" style="margin-top: 10px;">
+		<div class="row">
+			<div class="col-sm-3">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item details_blk"><a href="personalinfo.html" class="list_anchor"><span
+								class="badge badge-light">1</span>&nbsp; Personal Information </a></li>
+
+					<li class="list-group-item details_blk"><a href="academicinfo.html" class="list_anchor"><span
+								class="badge badge-light">2</span>&nbsp;Academinc Information</a></li>
+					<li class="list-group-item details_blk"><a href="declaration.html" class="list_anchor"><span
+								class="badge badge-light">3</span>&nbsp;Declaration</a></li>
+					<li class="list-group-item details_blk"><a href="verify.html" class="list_anchor"><span
+								class="badge badge-light">4</span>&nbsp;Verify & Submit</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9">
+				<div class="card">
+					<div class="card-body">
+						<h5>Personal Information<span style="color:blue;float:right;font-size: 14px;">Edit</span></h5>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Name of the Candidate</label>
+								<h6>Seban Joseph</h6>
+							</div>
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Mobile</label>
+								<h6>+91 9999999999</h6>
+							</div>
+							<div class="col-md-4">
+								<label>E-Mail</label>
+								<h6>abc@abc.com</h6>
+							</div>
+							<div class="col-md-4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Date of Birth</label>
+								<h6>21 Jun 1989</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Aadhar Number</label>
+								<h6>1234 3434 2342</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Gender</label>
+								<h6>Male</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Program Applied For<span style="color:red;">*</span></label>
+								<h6>B-Tech - Information Technology</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Department<span style="color:red;">*</span></label>
+								<h6>Bachelor of Engineering - BE</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Father's Name<span style="color:red;">*</span></label>
+								<h6>Joseph Devasia</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Mother's Name<span style="color:red;">*</span></label>
+								<h6>Mary Joseph</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Residence/Domicile<span style="color:red;">*</span></label>
+								<h6>Haryana</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Domicile certificate<span style="color:red;">*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Domilcile_certificate.jpg</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Nationality<span style="color:red;">*</span></label>
+								<h6>India</h6>
+							</div>
+						</div>
+						<hr />
+
+						<!--- Correspondance address-->
+						<h5>Correspondance Address<span style="color:blue;float:right;font-size: 14px;">Edit</span></h5>
+						<div class="row">
+							<div class="col-md-7">
+								<label>Address<span style="color:red;">*</span></label>
+								<h6>B201, sekhar bellevue, Unnamed road, near school 102830, Hisar, Haryana</h6>
+							</div>
+						</div>
+						<hr />
+						<!--- Permanent address-->
+						<h5>Permanent Address<span style="color:blue;float:right;font-size: 14px;">Edit</span></h5>
+						<div class="row">
+							<div class="col-md-7">
+								<label>Address<span style="color:red;">*</span></label>
+								<h6>B201, sekhar bellevue, Unnamed road, near school 102830, Hisar, Haryana</h6>
+							</div>
+						</div>
+						<hr />
+						<!--- Occupation Details-->
+						<h5>Occupation Details<span style="color:blue;float:right;font-size: 14px;">Edit</span></h5>
+
+						<div class="row">
+							<div class="col-md-4">
+								<label>Father's Occupation</label>
+								<h6>Govt. Employee</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Mother's Occupation<span style="color:red;">*</span></label>
+								<h6>NA</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>Annual Income of Father</label>
+								<h6>20lac-30lac</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Annual Income of Mother<span>*</span></label>
+								<h6>NA</h6>
+							</div>
+						</div>
+						<hr />
+						<!--- Upload Images Details-->
+						<h5>Uploaded Images<span style="color:blue;float:right;font-size: 14px;">Edit</span></h5>
+
+						<div class="row">
+							<div class="col-md-4">
+								<label>Passport Size Photgraph<span>*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Photo.jpg</h6>
+							</div>
+							<div class="col-md-4">
+								<label>Signature</label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Sign.jpg</h6>
+							</div>
+						</div>
+						<hr />
+						<!--- Examinations Passed-->
+						<h5>Examinations Passed<span style="color:blue;float:right;font-size: 14px;">Edit</span></h5><br />
+						<div class="row">
+								<table class="table table-striped table-bordered table-responsive">
+									<thead>
+										<th>Exam<br />Name</th>
+										<th>University/<br />Board/Dept.</th>
+										<th>Year Of Passing</th>
+										<th>Roll Number</th>
+										<th>Credit based System</th>
+										<th>CGPA Scale/Max Marks</th>
+										<th>CGPA/<br />Marks</th>
+										<th>%age</th>
+										<th>Division</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>10th</td>
+											<td>CBSE</td>
+											<td>2012</td>
+											<td>1234567</td>
+											<td>Marks</td>
+											<td>700</td>
+											<td>650</td>
+											<td>95%</td>
+											<td>I First</td>
+										</tr>
+										<tr>
+											<td>12th</td>
+											<td>CBSE</td>
+											<td>2014</td>
+											<td>1234567</td>
+											<td>Marks</td>
+											<td>500</td>
+											<td>400</td>
+											<td>80%</td>
+											<td>I First</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						<hr />
+						<!--- Required Documents-->
+						<h5>Required Documents<span style="color:blue;float:right;font-size: 14px;">Edit</span></h5>
+
+						<div class="row">
+							<div class="col-md-6">
+								<label>10th certificate<span>*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Photo.jpg</h6>
+							</div>
+							<div class="col-md-6">
+								<label>12th certificate</label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Sign.jpg</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label>Mark Sheet of Qualifying Examination<span>*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Photo.jpg</h6>
+							</div>
+							<div class="col-md-6">
+								<label>last Character Certificate<span>*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Sign.jpg</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label>Income Certificate if required<span>*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Photo.jpg</h6>
+							</div>
+							<div class="col-md-6">
+								<label>Certificate of gap year if any<span>*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Sign.jpg</h6>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-md-12">
+								<h6>Under which category are you applying for?<span
+										style="color:blue;float:right">Edit</span></h6>
+								<h5>Reserved</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label>Select Category<span>*</span></label>
+								<h5>Schedule Caste</h5>
+							</div>
+                            <div class="col-md-6">
+								<label>Category certificate<span>*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Certificate.jpg</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label>Are you entitled for the scholarship to be awarded by the haryana Govt</label>
+								<h5>Yes</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label>Scholarship certificate<span style="color:red;">*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Certificate.jpg</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label>Are you entitled for the stipend to BC students under State Scheduled Caste welfare
+									scheme</label>
+								<h5>Yes</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label>Stipend certificate<span style="color:red;">*</span></label>
+								<h6><i class="material-icons attachment">&#xe226;</i>&nbsp;&nbsp;Certificate.jpg</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label>Have you ever been expelled/rusticated/punished on account of misconduct or discipline by any
+									of the institutions you have studied in ?</label>
+								<h5>No</h5>
+							</div>
+							<div class="col-md-12">
+								<label class="container">
+									<h5><input type="checkbox" checked="checked">
+										<span class="checkmark"></span>I Agree to all the above mentioned statements</h5>
+								</label>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<button class="btn btn-primary btn-lg roundedbutton"><strong>Finish & Make Payment</strong></button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <br/>
+
+        <div class="container">
+            <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+                    <p style="font-size: 12px">DELIVERY PARTNER</p>
+                    <img src="imtac-logo.png" width="120px" height="30px">
+            </div>
+            </div>
+        </div><br/>
+        <h1 class="samplefooter"></h1>
+</body>
+
+</html>
